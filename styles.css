@@ -1,0 +1,17 @@
+html{
+    background-color: #952626;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+}
+.text{
+    color: chocolate;
+}
+.align_center{
+    text-align: center;
+}
+.translated_texts{
+   text-align: center;
+}

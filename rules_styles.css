@@ -1,0 +1,19 @@
+html{
+    background-color: #952626;
+
+}
+
+.rule_text{
+    font-size: 20px;
+    color: coral;
+    align-content: center;
+}
+
+.text{
+    color: chocolate;
+    align-content: center;
+}
+
+.align_center{
+    text-align: center;
+}
