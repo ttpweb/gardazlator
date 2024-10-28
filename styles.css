@@ -9,9 +9,7 @@ h2{
 .text{
     color: chocolate;
 }
-.align_center{
+
+*{
     text-align: center;
-}
-.translated_texts{
-   text-align: center;
 }
