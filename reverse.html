@@ -14,7 +14,7 @@
 <p class="text">Gardaszcası: <span id="outputText"></span></p>
 <script>
     function transformText(text) {
-        let result = text.replace(/y/g, 'j');
+        let result = text.replace(/j/g, 'z');
         result = result.replace(/kardeş/g, 'gardaszs');
         result = result.replace(/kardeeş/g, 'gardaszs');
         result = result.replace(/kardeşş/g, 'gardaszs');
@@ -24,7 +24,7 @@
         result = result.replace(/ç/g, 'cz');
         result = result.replace(/c/g, 'dz');
         result = result.replace(/v/g, 'w');
-        result = result.replace(/j/g, 'z');
+        result = result.replace(/y/g, 'j');
         result = result.replace(/h/g, 'ch');
 
         return result;
