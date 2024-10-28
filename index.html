@@ -8,12 +8,18 @@
 
 </head>
 <body>
-<h2>Gardaszlator v0.0.4</h2>
+<h2>Gardaszlator v0.0.5</h2>
 <input type="text" id="inputText" placeholder="Metni buraya girin">
 <button onclick="handleTextChange()">Çevir</button>
 <p class="text">Çeviri: <span id="outputText"></span></p>
 <br><br><br>
-<a class="text" href="rules.html">Metne Uygulanan Kuralları Görmek İsterseniz Tıklyın</a>
+<a class="text" href="rules.html">Metne Uygulanan Kuralları Görmek İçin Tıklayın</a>
+<br><br><br>
+<div class="ad_div">
+    <a class="ad_text"  href="reverse.html">YENİ! gardaszca yazmak istiyorsunuz ama bir türlü başaramıyor musunuz? Hemen Tık... YENİ!</a>
+</div>
+
+
 <script>
     function transformText(text) {
         let result = text.replace(/y/g, 'i');

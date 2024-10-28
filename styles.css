@@ -8,6 +8,14 @@ h2{
     background-color:  #629584;
     color: #243642;
 }
+
+.ad_text{
+    color: #243642;
+}
+.ad_div{
+    background-color: #629584;
+    margin: 10px;
+}
 .text{
     color: #E2F1E7;
 }

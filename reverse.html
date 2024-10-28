@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Gardaszlator Tersine Çeviri</title>
+
+</head>
+<body>
+<h2>Tersine Gardaszlator</h2>
+<input type="text" id="inputText" placeholder="Metni buraya girin">
+<button onclick="handleTextChange()">Çevir</button>
+<p class="text">Gardaszcası: <span id="outputText"></span></p>
+<script>
+    function transformText(text) {
+        let result = text.replace(/y/g, 'j');
+        result = result.replace(/kardeş/g, 'gardaszs');
+        result = result.replace(/kardeeş/g, 'gardaszs');
+        result = result.replace(/kardeşş/g, 'gardaszs');
+        result = result.replace(/kardeşşş/g, 'gardaszs');
+        result = result.replace(/i/g, 'y');
+        result = result.replace(/ş/g, 'sz');
+        result = result.replace(/ç/g, 'cz');
+        result = result.replace(/c/g, 'dz');
+        result = result.replace(/v/g, 'w');
+        result = result.replace(/j/g, 'z');
+        result = result.replace(/h/g, 'ch');
+
+        return result;
+    }
+
+    function handleTextChange() {
+        const inputText = document.getElementById("inputText").value;  // Kullanıcıdan metni alır
+        const resultText = transformText(inputText);  // Metni dönüştürür
+        document.getElementById("outputText").innerText = resultText;  // Sonucu ekrana yazar
+    }
+</script>
+
+<a href="index.html" class="text">Geri Dön</a>
+</body>
+</html>
