@@ -4,14 +4,14 @@ html{
 }
 
 h2{
-    font-size: 30px;
+    font-size: 50px;
     font-family: "Jacquard 12", system-ui, sans-serif;
     text-align: center;
     background-color:  #629584;
     color: #243642;
 }
 .rule_text{
-    font-size: 20px;
+    font-size: 40px;
     color: #E2F1E7;
     align-content: center;
 }
