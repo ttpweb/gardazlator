@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
     <title>Gardaszlator Çeviri</title>
+
 </head>
 <body>
 <h2>Gardaszlator v0.0.4</h2>
 <input type="text" id="inputText" placeholder="Metni buraya girin">
 <button onclick="handleTextChange()">Çevir</button>
-<p class = "text" >Çeviri: <span id="outputText"></span></p>
+<p class="text">Çeviri: <span id="outputText"></span></p>
 <br><br><br>
 <a class="text" href="rules.html">Metne Uygulanan Kuralları Görmek İsterseniz Tıklyın</a>
 <script>
@@ -24,6 +25,9 @@
         //result = result.replace(/z/g, 'j');
         result = result.replace(/ch/g, 'h');
         //result = result.replace(/y/g, 'i');//biraz bozuk
+        result = result.replace(/gardaszs/g, 'kardeş');
+        result = result.replace(/gardasz/g, 'kardeş');
+        result = result.replace(/gardaszszsz/g, 'kardeşşş');
 
         return result;
     }

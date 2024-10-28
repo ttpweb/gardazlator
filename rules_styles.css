@@ -5,6 +5,7 @@ html{
 
 h2{
     font-size: 30px;
+    font-family: "Jacquard 12", system-ui, sans-serif;
     text-align: center;
     background-color:  #629584;
     color: #243642;
@@ -23,3 +24,10 @@ h2{
 .align_center{
     text-align: center;
 }
+
+.jacquard-12-regular {
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
