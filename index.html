@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GKC Çeviri</title>
+</head>
+<body>
+<h2>GKÇ Çeviri v0.0.1</h2>
+<input type="text" id="inputText" placeholder="Metni buraya girin">
+<button onclick="handleTextChange()">Çevir</button>
+<p>Çeviri: <span id="outputText"></span></p>
+
+<script>
+    function transformText(text) {
+        let result = text.replace(/j/g, 'y');
+        result = result.replace(/sz/g, 'ş');
+        result = result.replace(/cz/g, 'ç');
+        result = result.replace(/dz/g, 'c');
+        result = result.replace(/w/g, 'v');
+        //result = result.replace(/z/g, 'j');
+        result = result.replace(/ch/g, 'h');
+        result = result.replace(/y/g, 'i');//biraz bozuk
+
+        return result;
+    }
+
+    function handleTextChange() {
+        const inputText = document.getElementById("inputText").value;  // Kullanıcıdan metni alır
+        const resultText = transformText(inputText);  // Metni dönüştürür
+        document.getElementById("outputText").innerText = resultText;  // Sonucu ekrana yazar
+    }
+</script>
+</body>
+</html>
