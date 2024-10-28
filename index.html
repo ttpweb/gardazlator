@@ -7,7 +7,7 @@
     <title>GKC Çeviri</title>
 </head>
 <body>
-<h2>GKC Çeviri v0.0.2</h2>
+<h2>GKC Çeviri v0.0.3</h2>
 <input type="text" id="inputText" placeholder="Metni buraya girin">
 <button onclick="handleTextChange()">Çevir</button>
 <p >Çeviri: <span id="outputText"></span></p>
@@ -15,12 +15,14 @@
 <a class="text" href="rules.html">Metne Uygulanan Kuralları Görmek İsterseniz Tıklyın</a>
 <script>
     function transformText(text) {
-        let result = text.replace(/j/g, 'y');
+        let result = text.replace(/y/g, 'i');
+        result = result.replace(/j/g, 'y');
         result = result.replace(/sz/g, 'ş');
         result = result.replace(/cz/g, 'ç');
         result = result.replace(/dz/g, 'c');
         result = result.replace(/w/g, 'v');
         //result = result.replace(/z/g, 'j');
+        result = result.replace(/ch/g, 'h');
         result = result.replace(/ch/g, 'h');
         //result = result.replace(/y/g, 'i');//biraz bozuk
 

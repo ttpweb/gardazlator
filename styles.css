@@ -1,13 +1,15 @@
 html{
-    background-color: #952626;
+    background-color: #243642;
 }
 
 h2{
     font-size: 30px;
     text-align: center;
+    background-color:  #629584;
+    color: #243642;
 }
 .text{
-    color: chocolate;
+    color: #E2F1E7;
 }
 
 *{

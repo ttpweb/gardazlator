@@ -1,16 +1,22 @@
 html{
-    background-color: #952626;
+    background-color: #243642;
 
 }
 
+h2{
+    font-size: 30px;
+    text-align: center;
+    background-color:  #629584;
+    color: #243642;
+}
 .rule_text{
     font-size: 20px;
-    color: coral;
+    color: #E2F1E7;
     align-content: center;
 }
 
 .text{
-    color: chocolate;
+    color: #387478;
     align-content: center;
 }
 
