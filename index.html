@@ -5,32 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
     <title>Gardaszlator Çeviri</title>
-
 </head>
 <body>
 <h2>Gardaszlator v0.0.5</h2>
 <input type="text" id="inputText" placeholder="Metni buraya girin">
 <button onclick="handleTextChange()">Çevir</button>
+<button onclick="clearText()">Sil</button> <!-- Clear button added -->
 <p class="text">Çeviri: <span id="outputText"></span></p>
 <br><br><br>
 <a class="text" href="rules.html">Metne Uygulanan Kuralları Görmek İçin Tıklayın</a>
 <br><br><br>
 <div class="ad_div">
-    <a class="ad_text"  href="index.html">Bazı Teknik arızalardan ötürü gardazcaya çeviri hizmeti askıya alınmıştır</a>
+    <a class="ad_text" href="reverse.html">YENİ! gardaszca yazmak istiyorsunuz ama bir türlü başaramıyor musunuz? Hemen Tık... YENİ!</a>
 </div>
-
 
 <script>
     function transformText(text) {
         let result = text.replace(/y/g, 'i');
+        result = result.replace(/ju/g, 'ü');
+        result = result.replace(/jo/g, 'ö');
         result = result.replace(/j/g, 'y');
         result = result.replace(/sz/g, 'ş');
         result = result.replace(/cz/g, 'ç');
         result = result.replace(/dz/g, 'c');
         result = result.replace(/w/g, 'v');
-        //result = result.replace(/z/g, 'j');
         result = result.replace(/ch/g, 'h');
-        //result = result.replace(/y/g, 'i');//biraz bozuk
         result = result.replace(/gardaszs/g, 'kardeş');
         result = result.replace(/gardasz/g, 'kardeş');
         result = result.replace(/gardaszszsz/g, 'kardeşşş');
@@ -39,9 +38,14 @@
     }
 
     function handleTextChange() {
-        const inputText = document.getElementById("inputText").value;  // Kullanıcıdan metni alır
-        const resultText = transformText(inputText);  // Metni dönüştürür
-        document.getElementById("outputText").innerText = resultText;  // Sonucu ekrana yazar
+        const inputText = document.getElementById("inputText").value;  // Get input text
+        const resultText = transformText(inputText);  // Transform the text
+        document.getElementById("outputText").innerText = resultText;  // Display the result
+    }
+
+    function clearText() {
+        document.getElementById("inputText").value = '';  // Clear the input field
+        document.getElementById("outputText").innerText = '';  // Clear the output field
     }
 </script>
 </body>
