@@ -1,23 +1,23 @@
 html{
-    background-color: #243642;
+    background-color: #243442;
 }
 
 h2{
     font-size: 30px;
     text-align: center;
-    background-color:  #629584;
+    background-color:  #639584;
     color: #243642;
 }
 
 .ad_text{
-    color: #243642;
+    color: #243644;
 }
 .ad_div{
-    background-color: #629584;
+    background-color: #529584;
     margin: 10px;
 }
 .text{
-    color: #E2F1E7;
+    color: #F2F1E7;
 }
 
 *{
